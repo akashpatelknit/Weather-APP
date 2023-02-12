@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
+    <link src="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Weather App</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="https://akashpatelknit.github.io/portfolio/" target="_blank">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- <a class="nav-link" href="#">Link</a> -->
+                    </li>
+                    <li class="nav-item dropdown">
+                        <!-- <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> -->
+
+                        <!-- </a> -->
+
+                    </li>
+                    <li class="nav-item">
+                        <!-- <a class="nav-link disabled">Disabled</a> -->
+                    </li>
+                </ul>
+                <nav>
+                    <form>
+                        <input type="text" placeholder="Search Location" class="searchField"border-radius: 8px;" />
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </nav>
+            </div>
+        </div>
+    </nav>
+    <main>
+
+        <div class="row row-cols-1 row-cols-md-4 mb-3 text-center">
+            <div class="col">
+                
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                        <h4 class="my-0 fw-normal">Temprature</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title weather1">30 °C</h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+
+                            <li>
+                                <div class="weather2">
+                                    <p>Loca</p>
+                                    <!-- <span>11:01 - Monday 2022-06-22</span -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="weather3">
+                                    <p><img src="" alt="condition" /></p>
+                                    <span>Condition</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="weather2">
+                                    <!-- <p>Loca</p> -->
+                                    <span>11:01 - Monday 2022-06-22</span </div>
+                            </li>
+                            <!-- <li>Min Temprature</li> -->
+                            <li></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            <!-- <i class="fa fa-solid fa-tricycle"></i> -->
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                        <h4 class="my-0 fw-normal">Air Report</h4>
+                    </div>
+                    <div class="card-body" id="card-body1">
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>
+                                <div class="a"><span></span></div>
+                            </li>
+                            <li>
+                                <div class="b"><span></span></div>
+                            </li>
+                            <li>
+                                <div class="c"><span></span></div>
+                            </li>
+                            <li>
+                                <div class="d"><span></span></div>
+                            </li>
+                            <li>
+                                <div class="e"><span></span></div>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                        <h4 class="my-0 fw-normal">Astro</h4>
+                    </div>
+                    <div class="card-body" id="card-body1" >
+                        <ul class="list-unstyled mt-3 mb-4 ">
+                            <li>
+                                <div class="one"> <i class="bi bi-sunrise"></i><span></span> </div>
+                            </li>
+                            <li>
+                                <div class="two"> <i class="bi bi-sunset"></i><span></span></div>
+                            </li>
+                            <li>
+                                <div class="three"><i class="bi bi-moon"></i><span></span></div>
+                            </li>
+                            <li>
+                                <div class="four"><i class="bi bi-moon-fill"></i><span></span></div>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                        <h4 class="my-0 fw-normal">Wind</h4>
+                    </div>
+                    <div class="card-body" id="card-body1">
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>
+                                <div class="w1"><i class="bi bi-wind"></i><span></span></div>
+                            </li>
+                            <li>
+                                <div class="w2"><span></span></div>
+                            </li>
+                            <li>
+                                <div class="w3"><span></span></div>
+                            </li>
+                            <li>
+                                <div class="w4"><span></span></div>
+                            </li>
+                            <li>
+                                <div class="w4"><span></span></div>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+        </div>
+    </main>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/47c0f5fa85.js" crossorigin="anonymous"></script>
+    <!-- <script src="index.js" ></script> -->
+</body>
+
+</html>
